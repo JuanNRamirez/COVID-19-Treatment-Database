@@ -59,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), DatabaseActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
 
 
     }
