@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btLogin = findViewById(R.id.btLogin);
         btContributions = findViewById(R.id.btContributions);
         btDatabase = findViewById(R.id.btDatabase);
-
+        btWho = findViewById(R.id.btWho);
 
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,14 +43,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btWho = findViewById(R.id.btWho);
         btWho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), WhoAreWeActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, WhoAreWeActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
+
+        btContributions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), HowToContributeActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+
 
     }
 }

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".HowToContributeActivity"/>
         <activity
             android:name=".MedicNavDrawer"
             android:label="@string/title_activity_medic_nav_drawer"
@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WhoAreWeActivity"/>
+        <activity android:name=".WhoAreWeActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
