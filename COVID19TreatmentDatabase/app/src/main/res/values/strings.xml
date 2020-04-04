@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">COVID19TreatmentDatabase</string>
+    <string name="tvWelcome">Welcome!</string>
+    <string name="tvSelect">Most COVID-19 treatment related knowledge</string>
+    <string name="btLogin">Log in or Register</string>
+    <string name="tvWho">Who are we?</string>
+    <string name="tvContributions">Contributions</string>
+    <string name="tvLogin">Sign in</string>
+    <string name="tvDatabase">Access the Database</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="noAccount">Medic with no account? Create one!</string>
+
+    <string name="tvPersonalData">Fill out some details</string>
+    <string name="etName">Name</string>
+    <string name="etBirthday">Birthday (DD/MM/YY)</string>
+    <string name="etSchool">Education (institutions and degrees)</string>
+    <string name="etCareer">Current work position</string>
+    <string name="etCareer2">Current workplace (hospital name)</string>
+    <string name="etPassword">Account password</string>
+    <string name="etPhone">Phone number</string>
+    <string name="tvInvolvement">Current involvement with COVID-19</string>
+    <string name="etInvolvementDetails">If applicable, please explain further</string>
+    <string name="tvResidence">Where are you currently based?</string>
+    <string name="etCountry">Country</string>
+    <string name="etCity">City</string>
+    <string name="btSubmit">Send</string>
+</resources>
