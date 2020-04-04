@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">COVID19TreatmentDatabase</string>
     <string name="tvWelcome">Welcome!</string>
     <string name="tvSelect">Most COVID-19 treatment related knowledge</string>
@@ -25,4 +25,18 @@
     <string name="etCountry">Country</string>
     <string name="etCity">City</string>
     <string name="btSubmit">Send</string>
+    <string name="title_activity_medic_nav_drawer" tools:ignore="ExtraTranslation">MedicNavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Dashboard</string>
+    <string name="menu_gallery">Add a case</string>
+    <string name="menu_slideshow">Access database</string>
+    <string name="menu_tools">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 </resources>

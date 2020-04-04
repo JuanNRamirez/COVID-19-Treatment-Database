@@ -62,8 +62,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Intent intent = new Intent(LoginActivity.this, TeacherNavDrawer.class);
-                //LoginActivity.this.startActivity(intent);
+                Intent intent = new Intent(LoginActivity.this, MedicNavDrawer.class);
+                LoginActivity.this.startActivity(intent);
 
             }
         });
@@ -133,15 +133,15 @@ public class LoginActivity extends AppCompatActivity {
 
         if(approvalStatus.equals("A")) {
 
-            //Intent intent = new Intent(LoginActivity.this, TeacherNavDrawer.class);
-            //startActivity(intent);
+            Intent intent = new Intent(LoginActivity.this, MedicNavDrawer.class);
+            startActivity(intent);
 
         } else{
 
             FirebaseAuth.getInstance().signOut();
             Intent intentReload = new Intent (LoginActivity.this, LoginActivity.class);
             startActivity(intentReload);
-            Toast.makeText(LoginActivity.this, "Account not approved!", Toast.LENGTH_LONG);
+            Toast.makeText(LoginActivity.this, "Account not approved!", Toast.LENGTH_LONG).show();
 
         }
 
