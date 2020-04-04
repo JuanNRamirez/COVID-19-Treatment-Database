@@ -11,6 +11,9 @@
     <string name="prompt_password">Password</string>
     <string name="noAccount">Medic with no account? Create one!</string>
 
+    <string name="tvWhoDescription">We are two Georgia Tech Students trying to help doctors
+        aggregate their insights</string>
+
     <string name="tvPersonalData">Fill out some details</string>
     <string name="etName">Name</string>
     <string name="etBirthday">Birthday (DD/MM/YY)</string>

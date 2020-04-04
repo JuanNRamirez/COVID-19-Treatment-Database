@@ -32,13 +32,22 @@ public class MainActivity extends AppCompatActivity {
         btLogin = findViewById(R.id.btLogin);
         btContributions = findViewById(R.id.btContributions);
         btDatabase = findViewById(R.id.btDatabase);
-        btWho = findViewById(R.id.btWho);
+
 
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btWho = findViewById(R.id.btWho);
+        btWho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), WhoAreWeActivity.class);
                 startActivity(intent);
             }
         });
