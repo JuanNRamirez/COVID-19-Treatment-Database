@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@drawable/back_main"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/work_sans_extrabold"
+        android:text="@string/tvWelcome"
+        android:textAlignment="center"
+        android:textColor="#232F34"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvKnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:fontFamily="@font/work_sans_bold"
+        android:text="@string/tvSelect"
+        android:textAlignment="center"
+        android:textColor="#232F34"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKnow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#37966F"
+        android:drawableStart="@drawable/login"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="6dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="7dp"
+        android:text="@string/btLogin"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btContributions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#797C8C"
+        android:drawableStart="@drawable/account_plus"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="15dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="23dp"
+        android:paddingBottom="7dp"
+        android:text="@string/tvContributions"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btContributions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#714E5F"
+        android:drawableStart="@drawable/cloud"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="12dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="7dp"
+        android:text="@string/tvDatabase"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btWho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btDatabase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#506A75"
+        android:drawableStart="@drawable/account_question"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="7dp"
+        android:text="@string/tvWho"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

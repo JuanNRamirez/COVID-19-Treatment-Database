@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546970338831",
+    "firebase_url": "https://covid-19-treatment-database.firebaseio.com",
+    "project_id": "covid-19-treatment-database",
+    "storage_bucket": "covid-19-treatment-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546970338831:android:b47819406fddcf65bec57a",
+        "android_client_info": {
+          "package_name": "com.example.covid19treatmentdatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546970338831-lmvqnsmdisja4o8ds57i8r5o80g3k9cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNSiLvCpqMsWULsYd3UOd0IUtFNke1IGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546970338831-lmvqnsmdisja4o8ds57i8r5o80g3k9cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

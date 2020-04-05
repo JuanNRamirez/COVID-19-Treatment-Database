@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvStat"
+                android:fontFamily="@font/work_sans_bold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingTop="15dp"
+                android:paddingLeft="12dp"/>
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/work_sans_light"
+                android:hint="@string/etAge"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <RadioGroup
+                android:id="@+id/mF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/selGender"/>
+
+                <RadioButton android:id="@+id/radio_Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbMale"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans" />
+
+                <RadioButton android:id="@+id/radio_Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/rbFemale" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/selRace"/>
+
+            <Spinner
+                android:id="@+id/raceSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:entries="@array/race_array" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvLoc"
+                android:fontFamily="@font/work_sans_bold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingTop="15dp"
+                android:paddingLeft="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/selCountry"/>
+
+                <Spinner
+                    android:id="@+id/countrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/countries_array"
+                    android:spinnerMode="dialog"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/work_sans_light"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="false"
+                android:maxLines="3"
+                android:hint="@string/hospIdent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preHealth"
+                android:fontFamily="@font/work_sans_bold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingTop="14dp"
+                android:paddingLeft="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notice"
+                android:fontFamily="@font/work_sans"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingTop="14dp"
+                android:paddingLeft="12dp"/>
+
+            <com.example.covid19treatmentdatabase.MultiSpinner
+                android:id="@+id/multi"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Treatment"
+                android:fontFamily="@font/work_sans_bold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingTop="5dp"
+                android:paddingLeft="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/hospitalized"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/Hosp"/>
+
+                <RadioButton android:id="@+id/radio_Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans" />
+
+                <RadioButton android:id="@+id/radio_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medApplied"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:paddingLeft="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notice"
+                android:fontFamily="@font/work_sans"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingTop="14dp"
+                android:paddingLeft="12dp"/>
+
+            <com.example.covid19treatmentdatabase.MultiSpinner
+                android:id="@+id/multiMed"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"/>
+
+            <RadioGroup
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/stat"/>
+
+                <RadioButton android:id="@+id/radio_Act"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/work_sans" />
+
+                <RadioButton android:id="@+id/radio_Dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/dec" />
+
+                <RadioButton android:id="@+id/radio_Rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/rec" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/btSubmit"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans_bold"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
