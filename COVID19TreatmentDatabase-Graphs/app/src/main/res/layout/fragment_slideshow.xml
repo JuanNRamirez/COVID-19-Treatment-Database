@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dataAccess"
+        android:fontFamily="@font/work_sans_bold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"/>
+
+    <Button
+        android:id="@+id/btDatabaseAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#714E5F"
+        android:drawableStart="@drawable/cloud"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="12dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="7dp"
+        android:text="@string/tvDatabase"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statAccess"
+        android:fontFamily="@font/work_sans_bold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingTop="20dp"
+        android:paddingLeft="12dp"/>
+
+    <Button
+        android:id="@+id/btStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#797C8C"
+        android:drawableStart="@drawable/magnify_plus_outline"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:paddingStart="15dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="23dp"
+        android:paddingBottom="7dp"
+        android:text="@string/btStat"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+</LinearLayout>
